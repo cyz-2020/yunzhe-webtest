@@ -6,7 +6,9 @@ node {
         }
         stage('test'){
             echo 'start test'
-            sh 'python webTest-master/start_test.py'    
+                script{
+                        sh """python webTest-master/start_test.py""" 
+                }  
             
         }
          stage('teardown'){
