@@ -7,7 +7,7 @@ node {
         stage('test'){
             echo 'start test'
  
-           bat 'python start_test.py'
+           bat 'python webTest-master/start_test.py'
 
             
         }
