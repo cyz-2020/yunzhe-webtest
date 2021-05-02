@@ -6,9 +6,9 @@ node {
         }
         stage('test'){
             echo 'start test'
-                script{
-                        bat 'python webTest-master/start_test.py'
-                }  
+ 
+           bat 'python start_test.py'
+
             
         }
          stage('teardown'){
